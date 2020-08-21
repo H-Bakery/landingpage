@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row dense>
-      <v-col cols="12">
+      <v-col cols="12" md="4" sm="4" xs="4">
         <v-card>
           <v-card-title v-text="'Bestellen'"></v-card-title>
           <v-card-text>
@@ -10,7 +10,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="4" sm="4" xs="4">
         <v-card>
           <v-card-title v-text="'Anfahrt'"></v-card-title>
           <v-card-text>
@@ -20,7 +20,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="4" sm="4" xs="4">
         <v-card>
           <v-card-title v-text="'Öffnungszeiten'"></v-card-title>
           <v-card-text>
@@ -89,6 +89,7 @@ export default {}
 .theme--dark.v-card {
   color: var(--primary);
   background-color: var(--white);
+  min-height: 250px;
 }
 
 .theme--dark.v-card > .v-card__text,

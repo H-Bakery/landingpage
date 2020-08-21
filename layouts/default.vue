@@ -30,7 +30,7 @@ export default {
   --black: #260c11;
   --white: #f2f2f2;
   --primary: #9e3e6e;
-  --seconary: #bf8bab;
+  --secondary: #bf8bab;
   --yellow: #f2c020;
   --orange: #f2a922;
   --brown: #bf6e0b;
@@ -50,5 +50,9 @@ code {
 
 .v-app-bar {
   border-bottom: 5px solid var(--primary) !important;
+}
+
+.theme--dark.v-application {
+  background: var(--secondary);
 }
 </style>

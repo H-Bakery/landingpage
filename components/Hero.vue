@@ -1,10 +1,13 @@
 <template>
   <div class="wrapper">
-    <div class="hero">
-      <h1>Willkommen!</h1>
-      <p class="subtitle">Mit Hand und Liebe gebacken.</p>
-      <p class="subtitle">Seit 1933.</p>
-    </div>
+    <v-card class="hero">
+      <v-card-title class="title">Willkommen!</v-card-title>
+      <v-card-text>
+        <p class="subtitle">Seit 1933,</p>
+        <p class="subtitle">mit Hand und Liebe gebacken.</p>
+        <p class="subtitle">Ihre Bäckerei Heusser</p>
+      </v-card-text>
+    </v-card>
     <div class="bg_image" />
   </div>
 </template>
@@ -17,7 +20,7 @@ export default {}
 .wrapper {
   padding-top: 10%;
   height: 70vh;
-  max-width: 100%;
+  width: 100%;
   background-image: url('~@/assets/wip_bg.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -27,10 +30,12 @@ export default {}
 
 .hero {
   padding: 40px;
+  max-width: 42%;
   color: var(--primary);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
-h1 {
+.title {
   font-weight: 800;
   font-size: 5em;
 }
@@ -38,5 +43,12 @@ h1 {
 .subtitle {
   font-weight: 800;
   font-size: 2em;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .hero {
+    max-width: 100%;
+  }
 }
 </style>
