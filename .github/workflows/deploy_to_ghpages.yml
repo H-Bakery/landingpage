@@ -32,4 +32,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
-        cname: demo.bäckerei-heusser.de
+        cname: demo.xn--bckerei-heusser-0kb.de
